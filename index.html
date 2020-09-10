@@ -3,10 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>testejavascript</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <script>
+       function interruptor () 
+      { 
+        var imagemLigada = "https://i.pinimg.com/originals/12/df/2e/12df2ead7c871a16ae2ab11f3e746c2c.png"
+       
+        if (document.getElementById("luz").src == imagemLigada)
+      {  
+        var imagemDesligada= "https://3.bp.blogspot.com/-Zg1fMVnsc9c/TvokUpUGINI/AAAAAAAAANM/9kcWGv_1-Fc/s1600/L%25C3%2582MPADA.jpg"
+
+        document.getElementById("luz").src =imagemDesligada;
+        
+       } 
+        else {
+        document.getElementById("luz").src =imagemLigada; 
+        }
+
+       }
+
+    </script>
   </head>
   <body>
-    <script src="script.js"></script>
+    <h1>Acenda a lampada</h1>
+      <img src="https://3.bp.blogspot.com/-Zg1fMVnsc9c/TvokUpUGINI/AAAAAAAAANM/9kcWGv_1-Fc/s1600/L%25C3%2582MPADA.jpg" width="30%" id="luz" />
+    <button onclick="interruptor ()"> 
+      on/off 
+    </button>
+
   </body>
 </html>
